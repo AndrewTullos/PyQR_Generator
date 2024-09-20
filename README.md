@@ -1,41 +1,63 @@
-## QR Code Generator Script
+# QR Code Generator
 
-This Python script generates a QR code for the provided URL and saves it as "some_file.png".
+This is a simple Python script that generates a QR code from user input. The generated QR code can encode any text or URL provided and will be saved as an image file.
 
-### Requirements
+## Features
 
-- Python 3 ([https://www.python.org/downloads/](https://www.python.org/downloads/))
-- qrcode library (installation instructions below)
+- User-friendly command-line interface.
+- Customizable QR code with a blue background and black foreground.
+- Save the generated QR code as an image file.
 
-### Installation
+## Requirements
 
-1. **Install Python 3:**
-   Download and install Python 3 from the official website if you haven't already.
+- Python 3.x
+- `qrcode` module
 
-2. **Install the qrcode library:**
-   Open a terminal or command prompt and run the following command:
+## Installation
+
+1. Clone the repository:
 
    ```bash
-   pip3 install qrcode
+   git clone https://github.com/your-username/your-repo-name.git
    ```
 
-   - Detailed outline provided here https://pypi.org/project/qrcode/
-
-3. **Swap out the**
-   Swap out line 2 URL for your weblink you desire
-
+2. Navigate to the project directory:
    ```
-   img = qrcode.make('https://main.d3vianaxlv4x9d.amplifyapp.com/')
+   cd your-repo-name
    ```
-
-4. **Run your code**
-
+3. Install the required package:
    ```
-   python3 qr.py
+   pip install qrcode[pil]
    ```
 
-   You should now see a png file generated in your documents folder "QRCODE_GENERATOR".
+## Usage
 
-5. Share with friends and enjoy the results
+1. Run the script:
+   ```
+   bash
+   Copy code
+   python qr_code_generator.py
+   ```
+2. When prompted, enter the text or URL you want to encode in the QR code.
 
-_Resources: https://pypi.org/project/qrcode/_
+3. Enter the desired filename for the QR code image (e.g., my_qrcode.png).
+
+4. The QR code will be generated and saved as an image file in the project directory.
+
+## Example
+
+```
+Enter text or URL: https://github.com
+Enter your filename: my_qrcode.png
+QR code saved as my_qrcode.png
+```
+
+## Notes
+
+- Make sure to include the file extension (.png, .jpg, etc.) when providing the filename.
+
+- The QR code is generated with a blue background and black foreground by default. You can modify the colors in the script.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
